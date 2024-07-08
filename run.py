@@ -1,6 +1,5 @@
 from flask import Flask
 import face_recognition
-import dlib
 
 app = Flask(__name__)
 
@@ -25,4 +24,4 @@ def hello_name():
    
 
 if __name__ == '__main__':
-   app.run(debug=False)
+   app.run(host='0.0.0.0',debug=False)
